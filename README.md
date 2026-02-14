@@ -56,19 +56,3 @@
 - **Queue System:** Redis or RabbitMQ for task queuing
 - **State Management:** FSM (Finite State Machine) for conversation flow
 
-local-ai-assistant/
-├── main.py                 # FastAPI app with all endpoints
-├── orchestrator.py         # HybridOrchestrator (central brain)
-├── speech_pipeline.py      # STT (Whisper/Vosk) + TTS (Piper)
-├── nlu_engine.py           # Local LLM (Ollama) + optional cloud
-├── vision_pipeline.py      # Moondream2 image analysis
-├── calendar_manager.py     # Appointment database
-├── task_manager.py         # Task & progress tracking
-├── call_handler.py         # Twilio webhook logic
-├── privacy.py              # Privacy filter, encryption, anonymization
-├── cloud_proxy.py          # Optional cloud offloading (with consent)
-├── config.py               # Settings from environment
-├── init_databases.py       # Database schema creation
-├── requirements.txt        # Dependencies
-├── .env.template           # Configuration template
-└── logs/                   # Log directory (created automatically)
